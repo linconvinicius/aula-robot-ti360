@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-01T23:44:51.466758" rpa="false" schemaversion="5">
+<suite id="s1" name="Globo Gherkin" source="c:\Users\DELL\projects\aula-robot-ti360\Globo\globo_gherkin.robot">
+<test id="s1-t1" name="Caso de Teste 01 - Acesso da menu &quot;g1&quot;" line="9">
+<kw name="Abrir o navegador" owner="globo_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-01T23:44:51.976275" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-01T23:44:51.976275" elapsed="2.291223"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T23:44:54.267498" elapsed="0.050089"/>
+</kw>
+<status status="PASS" start="2024-06-01T23:44:51.974243" elapsed="2.344342"/>
+</kw>
+<kw name="Dado que estou na home page do Globo.com" owner="globo_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T23:44:54.323572" level="INFO">Opening url 'https://www.globo.com/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T23:44:54.322574" elapsed="5.430109"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${PAGINA_NOTICIA}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-01T23:44:59.752683" elapsed="0.184853"/>
+</kw>
+<status status="PASS" start="2024-06-01T23:44:54.322574" elapsed="5.614962"/>
+</kw>
+<kw name="Quando acessar a página do &quot;g1&quot;" owner="globo_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T23:44:59.939671" level="INFO">Clicking element '(//a[contains(.,'g1')])[2]'.</msg>
+<arg>locator=${PAGINA_NOTICIA}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T23:44:59.938673" elapsed="7.215038"/>
+</kw>
+<status status="PASS" start="2024-06-01T23:44:59.938673" elapsed="7.215038"/>
+</kw>
+<kw name="Então o título da página deve ficar &quot;g1 - O portal de notícias da Globo&quot;" owner="globo_resources">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text="g1 - O portal de notícias da Globo"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-06-01T23:45:07.155705" elapsed="0.065731"/>
+</kw>
+<status status="PASS" start="2024-06-01T23:45:07.155705" elapsed="0.065731"/>
+</kw>
+<kw name="Fechar o navegador" owner="globo_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-06-01T23:45:07.893992" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-06-01T23:45:07.224436" elapsed="0.669556"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T23:45:07.893992" elapsed="3.001575"/>
+</kw>
+<status status="PASS" start="2024-06-01T23:45:07.223439" elapsed="3.673116"/>
+</kw>
+<doc>Esse teste verifica o menu ofertas do site Globo.com
+e verifica a categoria Ofertas do dia</doc>
+<tag>notícias</tag>
+<status status="PASS" start="2024-06-01T23:44:51.973473" elapsed="18.925497"/>
+</test>
+<test id="s1-t2" name="Caso de Teste 02 - Acesso a página do Globo Esporte" line="17">
+<kw name="Abrir o navegador" owner="globo_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-01T23:45:10.922629" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-01T23:45:10.922629" elapsed="1.682308"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T23:45:12.604937" elapsed="0.051483"/>
+</kw>
+<status status="PASS" start="2024-06-01T23:45:10.921630" elapsed="1.734790"/>
+</kw>
+<kw name="Dado que estou na home page do Globo.com" owner="globo_resources">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-01T23:45:12.658413" level="INFO">Opening url 'https://www.globo.com/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-01T23:45:12.658413" elapsed="4.990690"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${PAGINA_NOTICIA}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-01T23:45:17.649103" elapsed="0.106155"/>
+</kw>
+<status status="PASS" start="2024-06-01T23:45:12.657416" elapsed="5.098840"/>
+</kw>
+<kw name="Quando acessar a página do &quot;ge&quot;" owner="globo_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T23:45:17.758250" level="INFO">Clicking element '(//a[contains(.,'ge')])[4]'.</msg>
+<arg>locator=${PAGINA_ESPORTE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T23:45:17.757251" elapsed="6.598348"/>
+</kw>
+<status status="PASS" start="2024-06-01T23:45:17.756256" elapsed="6.599343"/>
+</kw>
+<kw name="Então o título da página deve ficar &quot;ge.globo - É esporte sempre&quot;" owner="globo_resources">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-01T23:45:24.383628" level="INFO">Page title is 'ge.globo - É esporte sempre'.</msg>
+<arg>title=ge.globo - É esporte sempre</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-06-01T23:45:24.366098" elapsed="0.017530"/>
+</kw>
+<status status="PASS" start="2024-06-01T23:45:24.365090" elapsed="0.019522"/>
+</kw>
+<kw name="Fechar o navegador" owner="globo_resources" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-06-01T23:45:25.632606" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-06-01T23:45:24.389662" elapsed="1.243942"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T23:45:25.633604" elapsed="3.821588"/>
+</kw>
+<status status="PASS" start="2024-06-01T23:45:24.389662" elapsed="5.066538"/>
+</kw>
+<doc>Esse teste verifica o acesso a página Globo Esporte</doc>
+<tag>esportes</tag>
+<status status="PASS" start="2024-06-01T23:45:10.913921" elapsed="18.544271"/>
+</test>
+<doc>Essa suíte testa o site do Globo.com</doc>
+<status status="PASS" start="2024-06-01T23:44:51.477567" elapsed="37.987458"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">esportes</stat>
+<stat pass="1" fail="0" skip="0">notícias</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Globo Gherkin">Globo Gherkin</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
