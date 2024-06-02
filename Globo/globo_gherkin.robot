@@ -6,9 +6,8 @@ Test Teardown    Fechar o navegador
 
 
 *** Test Cases ***
-Caso de Teste 01 - Acesso da menu "g1"
-    [Documentation]    Esse teste verifica o menu ofertas do site Globo.com
-    ...                e verifica a categoria Ofertas do dia
+Caso de Teste 01 - Acesso a página do "G1"
+    [Documentation]    Esse teste verifica o acesso a página de notícias do G1
     [Tags]             notícias
     Dado que estou na home page do Globo.com
     Quando acessar a página do "g1"
