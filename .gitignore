@@ -1,1 +1,11 @@
-results
+#pasta_resultados
+results/
+
+#VS Code
+.vscode/
+
+#gitignore
+.gitignore
+
+#github
+.github/
