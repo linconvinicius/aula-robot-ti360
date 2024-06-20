@@ -6,6 +6,7 @@ Este projeto contém testes automatizados usando Robot Framework para verificar 
 
 
 ├── globo_resources.robot
+
 └── ML_resources.robot
 
 
