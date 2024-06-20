@@ -4,10 +4,17 @@ Este projeto contém testes automatizados usando Robot Framework para verificar 
 
 ## Estrutura do Projeto
 
+#### Globo
 
-├── globo_resources.robot
+├── globo_gherkin.robot
+
+└── globo_resources.robot
+
+#### MercadoLivre
+
+├── ML_gherkin.robot
+
 └── ML_resources.robot
-
 
 ## Pré-requisitos
 
@@ -45,8 +52,7 @@ Este projeto contém testes automatizados usando Robot Framework para verificar 
 
 1. *Clone o repositório*:
    ```
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio
+   git clone https://github.com/linconvinicius/aula-robot-ti360.git
    ```
 
 2. *Execute os testes*:
@@ -55,6 +61,6 @@ Este projeto contém testes automatizados usando Robot Framework para verificar 
    robot ml_tests.robot
    ```
 
-Caso você tenha a extensão Robot Framework Language Server instalada no VS Code, não será necessário executar o tópico 2 da sessão EXECUTANDO OS TESTES, visto que essa extensão oferece as opções de `Run Test` e `Run Suite Test`, direto no seu arquivo de cenários.
+Caso você tenha a extensão *Robot Framework Language Server* instalada no VS Code, não será necessário executar o *tópico 2* da sessão *EXECUTANDO OS TESTES*, visto que essa extensão oferece as opções de `Run Test` e `Run Suite Test`, direto no seu arquivo de cenários.
 
 ### Bons testes :)
