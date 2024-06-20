@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation    Essa suíte testa o site do Mercado Livre
-Resource         ML_resources.robot
+Resource         MLivre_resources.robot
 Test Setup       Abrir o navegador
 Test Teardown    Fechar o navegador
 
