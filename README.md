@@ -12,9 +12,9 @@ Este projeto contém testes automatizados usando Robot Framework para verificar 
 
 #### MercadoLivre
 
-├── ML_gherkin.robot
+├── MLivre_gherkin.robot
 
-└── ML_resources.robot
+└── MLivre_resources.robot
 
 ## Pré-requisitos
 
